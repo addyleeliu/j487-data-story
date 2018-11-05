@@ -1,0 +1,78 @@
+html { box-sizing: border-box; }
+
+/* Full bleed */
+
+    html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        /* overflow-x: hidden; (get rid of extra space on the right) */
+    }
+
+/* Header */
+
+    #header {
+      background-color: black;
+      height: 60px;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    #hamburger {
+      height: 18px;
+      width: 22px;
+    }
+
+    #avatar {
+      height: 22px;
+      width: 22px;
+    }
+
+    #masthead, #hamburger, #avatar {
+      align-self: center;
+    }
+
+    #hamburger, #avatar {
+      position: absolute;
+    }
+
+    #hamburger {
+      left: 15px;
+    }
+
+    #avatar {
+      right: 8px;
+    }
+
+    #masthead {
+      display: inline-block;
+      line-height: 3px;
+    }
+
+    #header > a, #header > a:visited {
+      text-decoration: none;
+      color: white;
+    }
+
+    @font-face {
+      font-family: AncientMedium;
+      src: url('AncientMedium.ttf');
+    }
+
+    #mast, #slogan {
+      text-align: center;
+    }
+
+    #mast {
+      margin-top: 18px;
+      font-family: AncientMedium, serif;
+      font-size: 24px;
+      transform: scale(1, 1.15);
+    }
+
+    #slogan {
+      font-family: Georgia, serif;
+      font-style: italic;
+      font-size: 12px;
+    }
