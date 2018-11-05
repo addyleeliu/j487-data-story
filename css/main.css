@@ -29,12 +29,9 @@ html { box-sizing: border-box; }
       width: 22px;
     }
 
-    #masthead, #hamburger, #avatar {
-      align-self: center;
-    }
-
     #hamburger, #avatar {
       position: absolute;
+      top: 22px;
     }
 
     #hamburger {
