@@ -1,0 +1,208 @@
+{
+  "data":[
+   {
+     "producer": "China (Coal)",
+     "ghg_percent": 14.3
+   },
+   {
+     "producer": "Saudi Arabian Oil Company (Aramco)",
+     "ghg_percent": 4.5
+   },
+   {
+     "producer": "Gazprom OAO",
+     "ghg_percent": 3.9
+   },
+   {
+     "producer": "National Iranian Oil Co",
+     "ghg_percent": 2.3
+   },
+   {
+     "producer": "ExxonMobil Corp",
+     "ghg_percent": 2
+   },
+   {
+     "producer": "Coal India",
+     "ghg_percent": 1.9
+   },
+   {
+     "producer": "Petroleos Mexicanos (Pemex)",
+     "ghg_percent": 1.9
+   },
+   {
+     "producer": "Russia (Coal)",
+     "ghg_percent": 1.9
+   },
+   {
+     "producer": "Royal Dutch Shell PLC",
+     "ghg_percent": 1.7
+   },
+   {
+     "producer": "China National Petroleum Corp (CNPC)",
+     "ghg_percent": 1.6
+   },
+   {
+     "producer": "BP PLC",
+     "ghg_percent": 1.5
+   },
+   {
+     "producer": "Chevron Corp",
+     "ghg_percent": 1.3
+   },
+   {
+     "producer": "Petroleos de Venezuela SA (PDVSA)",
+     "ghg_percent": 1.2
+   },
+   {
+     "producer": "Abu Dhabi National Oil Co",
+     "ghg_percent": 1.2
+   },
+   {
+     "producer": "Poland Coal",
+     "ghg_percent": 1.2
+   },
+   {
+     "producer": "Peabody Energy Corp",
+     "ghg_percent": 1.2
+   },
+   {
+     "producer": "Sonatrach SPA",
+     "ghg_percent": 1
+   },
+   {
+     "producer": "Kuwait Petroleum Corp",
+     "ghg_percent": 1
+   },
+   {
+     "producer": "Total SA",
+     "ghg_percent": 0.9
+   },
+   {
+     "producer": "BHP Billiton Ltd",
+     "ghg_percent": 0.9
+   },
+   {
+     "producer": "ConocoPhillips",
+     "ghg_percent": 0.9
+   },
+   {
+     "producer": "Petroleo Brasileiro SA (Petrobras)",
+     "ghg_percent": 0.8
+   },
+   {
+     "producer": "Lukoil OAO",
+     "ghg_percent": 0.8
+   },
+   {
+     "producer": "Rio Tinto",
+     "ghg_percent": 0.7
+   },
+   {
+     "producer": "Nigerian National Petroleum Corp",
+     "ghg_percent": 0.7
+   },
+   {
+     "producer": "Petroliam Nasional Berhad (Petronas)",
+     "ghg_percent": 0.7
+   },
+   {
+     "producer": "Rosneft OAO",
+     "ghg_percent": 0.7
+   },
+   {
+     "producer": "Arch Coal Inc",
+     "ghg_percent": 0.6
+   },
+   {
+     "producer": "Iraq National Oil Co",
+     "ghg_percent": 0.6
+   },
+   {
+     "producer": "Eni SPA",
+     "ghg_percent": 0.6
+   },
+   {
+     "producer": "Anglo American",
+     "ghg_percent": 0.6
+   },
+   {
+     "producer": "Surgutneftegas OAO",
+     "ghg_percent": 0.6
+   },
+   {
+     "producer": "Alpha Natural Resources Inc",
+     "ghg_percent": 0.5
+   },
+   {
+     "producer": "Qatar Petroleum Corp",
+     "ghg_percent": 0.5
+   },
+   {
+     "producer": "PT Pertamina",
+     "ghg_percent": 0.5
+   },
+   {
+     "producer": "Kazakhstan Coal",
+     "ghg_percent": 0.5
+   },
+   {
+     "producer": "Statoil ASA",
+     "ghg_percent": 0.5
+   },
+   {
+     "producer": "National Oil Corporation of Libya",
+     "ghg_percent": 0.5
+   },
+   {
+     "producer": "Consol Energy Inc",
+     "ghg_percent": 0.5
+   },
+   {
+     "producer": "Ukraine Coal",
+     "ghg_percent": 0.5
+   },
+   {
+     "producer": "RWE AG",
+     "ghg_percent": 0.5
+   },
+   {
+     "producer": "Oil & Natural Gas Corp Ltd",
+     "ghg_percent": 0.4
+   },
+   {
+     "producer": "Glencore PLC",
+     "ghg_percent": 0.4
+   },
+   {
+     "producer": "TurkmenGaz",
+     "ghg_percent": 0.4
+   },
+   {
+     "producer": "Sasol Ltd",
+     "ghg_percent": 0.4
+   },
+   {
+     "producer": "Repsol SA",
+     "ghg_percent": 0.3
+   },
+   {
+     "producer": "Anadarko Petroleum Corp",
+     "ghg_percent": 0.3
+   },
+   {
+     "producer": "Egyptian General Petroleum Corp",
+     "ghg_percent": 0.3
+   },
+   {
+     "producer": "Petroleum Development Oman LLC",
+     "ghg_percent": 0.3
+   },
+   {
+     "producer": "Czech Republic Coal",
+     "ghg_percent": 0.3
+   },
+   {
+     "producer": "Remaining 50 producers in sample",
+     "ghg_percent": 7.4
+   }
+  ]
+}

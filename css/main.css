@@ -97,7 +97,7 @@ html { box-sizing: border-box; }
 
     #byline, #date {
       font-family: Helvetica, sans-serif;
-      font-size: 15px;
+      font-size: 14.5px;
     }
 
     #byline {
@@ -121,6 +121,10 @@ html { box-sizing: border-box; }
 
   h1 {
     font-size: 2.2em;
+  }
+
+  #byline, #date {
+    font-size: 15px;
   }
 }
 
