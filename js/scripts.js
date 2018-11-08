@@ -66,15 +66,15 @@ function buildChart() {
       chart: {
           type: 'column',
           marginTop: 15,
-          spacingBottom: 100
+          spacingBottom: 40
       },
       title: {
           text: null
       },
-      subtitle: {
-          text: 'Source: <a href="https://climate.nasa.gov/vital-signs/global-temperature/">NASA Goddard Institute for Space Studies (GISS)</a>',
-          verticalAlign: 'bottom',
-          y: 50
+      credits: {
+          enabled: true,
+          text: 'Source: NASA Goddard Institute for Space Studies (GISS)',
+          href: 'javascript:window.open("https://climate.nasa.gov/vital-signs/global-temperature/", "_blank")'
       },
       xAxis: {
           categories: xCat
