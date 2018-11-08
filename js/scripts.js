@@ -74,7 +74,31 @@ $(function() {
     }
   }); // close AJAX call for Chart 3 data
 
-  // building Charts 1, 2, and 3
+  // Building Chart 4: Global Greenhouse Gas Emissions by Country
+  var url = 'js/ghg_country.json';
+  var data = [];
+  var countries = []; // x axis
+  var ghgPercentCountry = []; // y-axis
+
+  $.ajax({
+    type: 'GET',
+    dataType: 'json',
+    data: data,
+    url: url,
+    async: true,
+    success: function(data) {
+      console.log(data);
+
+      for (i=0; i < data.length; i++) {
+        // build array by looping through data
+        countries.push(data[i].country);
+        ghgPercentCountry.push(data[i].ghg_percent);
+      }
+      buildChart();
+    }
+  }); // close AJAX call for Chart 4 data
+
+  // building Charts 1, 2, 3, and 4
   function buildChart() {
     var myChart1 = Highcharts.chart('chart-temp_anomalies', {
         chart: {
@@ -176,7 +200,37 @@ $(function() {
         }]
     }); // close myChart3
 
-  } // close building Charts 1, 2, and 3
+    var myChart4 = Highcharts.chart('chart-ghg_country', {
+        chart: {
+            type: 'column',
+            marginTop: 15,
+            spacingBottom: 40
+        },
+        title: {
+            text: null
+        },
+        credits: {
+            enabled: true,
+            text: 'Source: CDIAC 2014 Fossil-Fuel CO2 Emissions by Nation Report',
+            href: 'javascript:window.open("http://cdiac.ess-dive.lbl.gov/trends/emis/tre_coun.html", "_blank")'
+        },
+        xAxis: {
+            categories: countries
+        },
+        yAxis: {
+            title: {
+                text: 'Percentage (%) of 2010 Global GHG Emissions'
+            }
+        },
+        series: [{
+            name: 'Percentage of Global GHG Emissions (%)',
+            showInLegend: false,
+            color: 'green',
+            data: ghgPercentCountry
+        }]
+    }); // close myChart4
+
+  } // close building Charts 1, 2, 3, and 4
 
   // Building Table 1: Cumulative 1988-2015 Global Greenhouse Gas Emissions
   $('#ajax-table').DataTable({
