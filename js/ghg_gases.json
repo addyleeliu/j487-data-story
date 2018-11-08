@@ -1,0 +1,22 @@
+[
+ {
+   "gas": "Carbon Dioxide (Fossil Fuel and Industrial Processes)",
+   "ghg_percent": 65
+ },
+ {
+   "gas": "Methane",
+   "ghg_percent": 16
+ },
+ {
+   "gas": "Carbon Dioxide (Forestry and Other Land Use)",
+   "ghg_percent": 11
+ },
+ {
+   "gas": "Nitrous Oxide",
+   "ghg_percent": 6
+ },
+ {
+   "gas": "Fluorinated Gases",
+   "ghg_percent": 2
+ }
+]
