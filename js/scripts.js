@@ -30,7 +30,7 @@ $(function() {
   var url = 'js/ghg_gases.json';
   var data = [];
   var gases = []; // x axis
-  var ghgPercent = []; // y-axis
+  var ghgPercentGases = []; // y-axis
 
   $.ajax({
     type: 'GET',
@@ -44,13 +44,37 @@ $(function() {
       for (i=0; i < data.length; i++) {
         // build array by looping through data
         gases.push(data[i].gas);
-        ghgPercent.push(data[i].ghg_percent);
+        ghgPercentGases.push(data[i].ghg_percent);
       }
       buildChart();
     }
   }); // close AJAX call for Chart 2 data
 
-  // building Charts 1 and 2
+  // Building Chart 3: Global Greenhouse Gas Emissions by Economic Sector
+  var url = 'js/ghg_econ-sector.json';
+  var data = [];
+  var econSector = []; // x axis
+  var ghgPercentEcon = []; // y-axis
+
+  $.ajax({
+    type: 'GET',
+    dataType: 'json',
+    data: data,
+    url: url,
+    async: true,
+    success: function(data) {
+      console.log(data);
+
+      for (i=0; i < data.length; i++) {
+        // build array by looping through data
+        econSector.push(data[i].econ_sector);
+        ghgPercentEcon.push(data[i].ghg_percent);
+      }
+      buildChart();
+    }
+  }); // close AJAX call for Chart 3 data
+
+  // building Charts 1, 2, and 3
   function buildChart() {
     var myChart1 = Highcharts.chart('chart-temp_anomalies', {
         chart: {
@@ -118,11 +142,41 @@ $(function() {
             name: 'Percentage of Global GHG Emissions (%)',
             showInLegend: false,
             color: 'green',
-            data: ghgPercent
+            data: ghgPercentGases
         }]
     }); // close myChart2
 
-  } // close building Charts 1 and 2
+    var myChart3 = Highcharts.chart('chart-ghg_econ-sector', {
+        chart: {
+            type: 'column',
+            marginTop: 15,
+            spacingBottom: 40
+        },
+        title: {
+            text: null
+        },
+        credits: {
+            enabled: true,
+            text: 'Source: Intergovernmental Panel on Climate Change Fifth Assessment Report',
+            href: 'javascript:window.open("https://www.epa.gov/ghgemissions/global-greenhouse-gas-emissions-data", "_blank")'
+        },
+        xAxis: {
+            categories: econSector
+        },
+        yAxis: {
+            title: {
+                text: 'Percentage (%) of 2010 Global GHG Emissions'
+            }
+        },
+        series: [{
+            name: 'Percentage of Global GHG Emissions (%)',
+            showInLegend: false,
+            color: 'green',
+            data: ghgPercentEcon
+        }]
+    }); // close myChart3
+
+  } // close building Charts 1, 2, and 3
 
   // Building Table 1: Cumulative 1988-2015 Global Greenhouse Gas Emissions
   $('#ajax-table').DataTable({

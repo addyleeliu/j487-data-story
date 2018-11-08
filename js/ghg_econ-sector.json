@@ -1,0 +1,26 @@
+[
+ {
+   "econ_sector": "Electricity and Heat Production",
+   "ghg_percent": 25
+ },
+ {
+   "econ_sector": "Agriculture, Forestry, and Other Land Use",
+   "ghg_percent": 24
+ },
+ {
+   "econ_sector": "Industry",
+   "ghg_percent": 21
+ },
+ {
+   "econ_sector": "Transportation",
+   "ghg_percent": 14
+ },
+ {
+   "econ_sector": "Other Energy",
+   "ghg_percent": 10
+ },
+ {
+   "econ_sector": "Buildings",
+   "ghg_percent": 6
+ }
+]

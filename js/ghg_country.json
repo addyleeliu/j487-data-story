@@ -1,0 +1,30 @@
+[
+ {
+   "country": "China",
+   "ghg_percent": 30
+ },
+ {
+   "country": "Other",
+   "ghg_percent": 30
+ },
+ {
+   "country": "United States",
+   "ghg_percent": 15
+ },
+ {
+   "country": "Countries in the European Union",
+   "ghg_percent": 9
+ },
+ {
+   "country": "India",
+   "ghg_percent": 7
+ },
+ {
+   "country": "Russian Federation",
+   "ghg_percent": 5
+ },
+ {
+   "country": "Japan",
+   "ghg_percent": 4
+ }
+]
